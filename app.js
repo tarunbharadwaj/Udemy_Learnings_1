@@ -4,7 +4,7 @@ var app = express();
 var port = 3500;
 
 
-//use of MIDDLEWARES
+/* --------------------------- use of MIDDLEWARES --------------------------- */
 app.use(express.json())
 
 app.use((req,res,next) => {
@@ -19,8 +19,8 @@ const tours = JSON.parse(
     );
 
 
-    
-//ROUTE HANDLERS
+
+/* ----------------------------- ROUTE HANDLERS ----------------------------- */
 //Refactoring of the code
  const getAllTours = (req,res) => {
     res.status(200).json({
@@ -113,7 +113,7 @@ const deleteUser = (req,res) => {
 
 
 
-//VARIOUS ROUTES
+/* ----------------------------- VARIOUS ROUTES ----------------------------- */
 //to get all tours
 app.get('/api/v1/tours', getAllTours);
 
@@ -138,7 +138,9 @@ app.patch('/api/v1/users', updateUser);
 //to delete a user
 app.delete('/api/v1/users', deleteUser);
 
-// //Another Way of refactoring the routes
+
+
+/* ------------------ Another Way of refactoring the routes ----------------- */
 // app
 // .route('/api/v1/tours')
 // .get(getAllTours)
@@ -150,8 +152,24 @@ app.delete('/api/v1/users', deleteUser);
 
 
 
+/* ------------------------ Mounting Multiple Routes ------------------------ */
 
-//START SERVER
+//create another variable for express module
+// const tourRouter = express.Router();
+
+//create middleware
+// app.use('/api/v1/tours', tourRouter)
+
+//various route handlers
+// tourRouter.get('/', getAllTours);
+// tourRouter.get('/:id', getTour);
+// tourRouter.post('/', createTour);
+
+
+
+
+
+/* ------------------------------ START SERVER ------------------------------ */
 app.listen(port, () => {
     console.log(`The app is running succesfully at port ${port}`)
 })

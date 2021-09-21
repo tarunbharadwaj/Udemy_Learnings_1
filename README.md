@@ -3,6 +3,6 @@ This is a repo for the course:  Node.js, Express, MongoDB &amp; More: The Comple
 
 Different Branches and their uses:
 - ****Code_refactoring**** : Contains the use for middlewares, code refactoring, Mounting multiple routes
-- ****Code_refactoring**** : Contains the use for middlewares, code refactoring, Mounting multiple routes
+- ****File Structuring_MVC**** : Contains the use for middlewares, code refactoring, Mounting multiple routes
 - ****Code_refactoring**** : Contains the use for middlewares, code refactoring, Mounting multiple routes
 - ****Code_refactoring**** : Contains the use for middlewares, code refactoring, Mounting multiple routes

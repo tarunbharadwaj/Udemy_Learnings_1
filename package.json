@@ -1,0 +1,22 @@
+{
+  "name": "tours_udemy",
+  "version": "1.0.0",
+  "description": "This is a new project in udemy",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "author": "tarun",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongoose": "^5.13.9",
+    "nodemon": "^2.0.13",
+    "slugify": "^1.6.0",
+    "validator": "^13.6.0"
+  }
+}

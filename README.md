@@ -8,5 +8,5 @@ Different Branches and their uses:
 - ****Working-with-Adv-Mongoose**** : Contains the use for validators, API code refactoring, working with models
 - ****Error Handling_Nodejs**** : Contains the use for various types of errors, use of other error handling techniques
 - ****Authentication and Security in Nodejs**** : Contains the use of JWT, types of security measures to be taken
-- ****______**** : Contains the use for various types of errors, use of other error handling techniques
-- 
+- ****Modelling-Data-and-Advanced-Mongoose**** : Contains advanced use of modelling data and geospatial data
+- ****_______**** : Contains the use for various types of errors, use of other error handling techniques
